@@ -23,16 +23,17 @@ A Spring Boot web app that teaches the Amharic alphabet, common phrases, and Eth
 4) Display Ethiopian cultural/historical facts (facts.html)
 - `http//loclhost:8080/facts`
 
-5) Display Gemini-powered Q&A (ask.html):
+5) Displays Google Gemini-powered LLM Q&A about Ethiopia or THE Amharic language (ask.html):
 - `http//loclhost:8080/ask`
 
 
 ## Run Locally
 
 ```bash
-git clone https://github.com/yourusername/amharic-tutor.git
-cd amharic-tutor
-./mvnw spring-boot:run
+git clone https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai.git
+cd amharic-tutor-springboot-thymeleaf-gemini-ai
+mvn spring-boot:run
+
 
 
 
