@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Amharic Phrases</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>Common Amharic Phrases</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Amharic</th>
+        <th>English Translation</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="phrase : ${phrases}">
+        <td th:text="${phrase.amharic}"></td>
+        <td th:text="${phrase.english}"></td>
+    </tr>
+    </tbody>
+</table>
+<a href="/" style="margin-top:20px; display:block;">Back to Home</a>
+</body>
+</html>

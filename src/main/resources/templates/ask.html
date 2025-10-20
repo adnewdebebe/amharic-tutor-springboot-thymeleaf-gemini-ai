@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ask Gemini</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>Ask the Google Gemini LLM anything about the Amharic language or Ethiopia</h1>
+
+
+<!-- Question Form -->
+<form id="askForm" method="post" action="/ask">
+    <input type="text" name="question" placeholder="Ask Gemini..." required/>
+    <button type="submit">Ask</button>
+</form>
+
+<!-- Loading Spinner -->
+<div id="loading" style="display:none;">
+    <div class="spinner"></div>
+    <p>Thinking<span class="dots">...</span> (እያሰብኩ ነው<span class="dots">...</span>)</p>
+</div>
+
+<!-- Gemini's Answer -->
+<div id="response" th:if="${answer}">
+    <p th:text="${answer}"></p>
+</div>
+
+<!-- JavaScript to toggle spinner -->
+<script>
+    const loading = document.getElementById("loading");
+    const response = document.getElementById("response");
+
+    document.getElementById("askForm").addEventListener("submit", function() {
+        // Show spinner
+        loading.style.display = "block";
+
+        // Clear previous response
+        if (response) {
+            response.innerHTML = "";
+        }
+    });
+
+    // Hide spinner if response is present after reload
+    if (response && response.innerText.trim() !== "") {
+        loading.style.display = "none";
+    }
+</script>
+<a href="/" style="margin-top:20px; display:block;">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Amharic Alphabet</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 0.5em; text-align: center; }
+        th { background-color: #f2f2f2; }
+        .fidel { font-size: 1.5em; }
+    </style>
+</head>
+<body>
+<h1>Amharic Fidel Alphabet</h1>
+<div><a href="/" style="margin-top:20px; display:block;">Back to Home</a></div>
+<br>
+<table>
+    <thead>
+    <tr>
+        <th>Fidel</th>
+        <th>Transliteration</th>
+        <th>Pronunciation (English Approximation)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="letter, iterStat : ${alphabet}">
+        <tr>
+            <td class="fidel" th:text="${letter.letter}">ሀ</td>
+            <td th:text="${letter.transliteration}">ha</td>
+            <td th:text="${letter.pronunciation}">hä</td>
+        </tr>
+        <tr th:if="${iterStat.index % 7 == 6}">
+            <td colspan="3" style="background-color:#eee; height:10px;"></td>
+        </tr>
+    </th:block>
+    </tbody>
+</table>
+<a href="/" style="margin-top:20px; display:block;">Back to Home</a>
+</body>
+</html>
