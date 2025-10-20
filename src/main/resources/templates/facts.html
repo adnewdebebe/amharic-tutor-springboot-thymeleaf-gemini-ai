@@ -7,7 +7,14 @@
 </head>
 <body>
 <h1>Fun Facts About Ethiopia</h1>
+<div><a href="/" style="margin-top:20px; display:block;">Back to Home</a></div>
+<br>
 <table border="1">
+    <thead>
+    <tr>
+        <th>Facts</th>
+    </tr>
+    </thead>
 <tbody>
 <tr th:each="fact : ${facts}">
     <td th:text="${fact.content}"></td>
