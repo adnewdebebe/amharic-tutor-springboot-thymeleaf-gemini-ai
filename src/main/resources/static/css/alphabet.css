@@ -1,0 +1,33 @@
+/* Scenic background for alphabet page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-image: url('../../images/Ethiopian-Background-Scenery-02.png'); /* adjust path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    color: #333;
+}
+
+/* Alphabet-specific styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: center;
+}
+
+th {
+    color: white;
+    background-color: #34495e;
+}
+
+.fidel {
+    font-size: 1.5em;
+}
