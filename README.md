@@ -99,18 +99,20 @@ The data for the database tables can be found in the (src/main/resources/data.sq
 
 ## Technologies List
     - Spring Boot
+    - Spring MVC
+    - Spring REST
+    - Spring Boot Data JPA
+    - Spring Boot H2 Database
+    - Hibernate
     - JAVA JDK 21
     - Thymeleaf
     - Gemini LLM
-    - H2 Database
     - Maven
     - Postman
-    - Chrome
     - Git
     - GitHub
     - IntelliJ IDEA or Visual Studio Code IDE
     - Google Chrome
-
 
 
 ## Gemini API Key Setup
