@@ -74,7 +74,7 @@ The data for the database tables can be found in the (src/main/resources/data.sq
                  "id": 1,
                  "phrase": "Hello",
                  "translation": "Selam"
-            {
+            }
         ]
 
 4) Get Ethiopian cultural/historical facts
@@ -93,22 +93,23 @@ The data for the database tables can be found in the (src/main/resources/data.sq
             }
        ]
 
-     
-##  
+5) The Postman collection (amharic-tutor-postman-collection.json) contains all the API endpoints listed above.
+   - Import the collection into Postman and test the endpoints.
+   - The Postman collection can be found in the (docs/amharic-tutor-postman-collection.json) file.
 
 ## Technologies List
-- Spring Boot
-- JAVA JDK 21
-- Thymeleaf
-- Gemini LLM
-- H2 Database
-- Maven
-- Postman
-- Chrome
-- Git
-- GitHub
-- IntelliJ IDEA or Visual Studio Code IDE
-- Google Chrome
+    - Spring Boot
+    - JAVA JDK 21
+    - Thymeleaf
+    - Gemini LLM
+    - H2 Database
+    - Maven
+    - Postman
+    - Chrome
+    - Git
+    - GitHub
+    - IntelliJ IDEA or Visual Studio Code IDE
+    - Google Chrome
 
 
 
@@ -123,15 +124,16 @@ To enable Gemini-powered Q&A functionality, you’ll need a valid API key from G
   - Click Create API Key
   - Copy the generated key
 
-- Step 2: Save the Key Locally as an Environment Variable using Powershell if using Windows:
+- Step 2: Save the Key Locally as an Environment Variable using Powershell if developing on Windows. (use similar steps for Linux/Mac)
+  - Open Powershell and Run the following commands:
 
-  - [System.Environment]::SetEnvironmentVariable("GEMINI_API_KEY", "your-api-key-here", "User") //to set the key for the current user only
-  - [System.Environment]::GetEnvironmentVariable("GEMINI_API_KEY", "User") //to confirm that the key has been set
+    - [System.Environment]::SetEnvironmentVariable("GEMINI_API_KEY", "your-api-key-here", "User") //to set the key for the current user only
+    - [System.Environment]::GetEnvironmentVariable("GEMINI_API_KEY", "User") //to confirm that the key has been set
 
 
 ##  Screenshots:
-   - ![Home page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/blob/main/screenshots/home.png)
-   - ![Alphabet page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/blob/main/screenshots/alphabet.png)
+   - ![Home page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/master/docs/screenshots/home.png)
+   - ![Alphabet page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/master/docs/screenshots/alphabet.png)
 
 
 ## Run Locally

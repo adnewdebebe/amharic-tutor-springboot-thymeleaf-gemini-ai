@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "85c1582e-33cd-4044-be94-b2b8c2823673",
+		"name": "amharic-tutor-springboot-thymeleaf-gemini-ai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49091546",
+		"_collection_link": "https://adnewdebebe-8604422.postman.co/workspace/adnewdebebe's-Workspace~86c17660-c625-4db4-88fc-5699ec7bba6d/collection/49091546-85c1582e-33cd-4044-be94-b2b8c2823673?action=share&source=collection_link&creator=49091546"
+	},
+	"item": [
+		{
+			"name": "/api/phrases",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/phrases",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"phrases"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/alphabet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/alphabet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alphabet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/facts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/facts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"facts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/ask?question=<Question String?>",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/ask?question=coffee?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ask"
+					],
+					"query": [
+						{
+							"key": "question",
+							"value": "coffee?"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
