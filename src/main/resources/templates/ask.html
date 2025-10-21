@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -10,24 +11,24 @@
 <div><a href="/" style="margin-top:20px; display:block;">Back to Home</a></div>
 <br>
 
-<!-- Question Form -->
+&lt;!&ndash; Question Form &ndash;&gt;
 <form id="askForm" method="post" action="/ask">
     <input type="text" name="question" placeholder="Ask Gemini..." required/>
     <button type="submit">Ask</button>
 </form>
 
-<!-- Loading Spinner -->
+&lt;!&ndash; Loading Spinner &ndash;&gt;
 <div id="loading" style="display:none;">
     <div class="spinner"></div>
     <p>Thinking<span class="dots">...</span> (እያሰብኩ ነው<span class="dots">...</span>)</p>
 </div>
 
-<!-- Gemini's Answer -->
+&lt;!&ndash; Gemini's Answer &ndash;&gt;
 <div id="response" th:if="${answer}">
     <p th:text="${answer}"></p>
 </div>
 
-<!-- JavaScript to toggle spinner -->
+&lt;!&ndash; JavaScript to toggle spinner &ndash;&gt;
 <script>
     const loading = document.getElementById("loading");
     const response = document.getElementById("response");
@@ -43,6 +44,63 @@
     });
 
     // Hide spinner if response is present after reload
+    if (response && response.innerText.trim() !== "") {
+        loading.style.display = "none";
+    }
+</script>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ask Gemini</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>Ask the Google Gemini LLM anything about the Amharic language or Ethiopia</h1>
+
+<nav>
+    <ul>
+        <li><a href="/">Back to Home</a></li>
+    </ul>
+</nav>
+
+<!-- Question Form -->
+<form id="askForm" method="post" action="/ask">
+    <input type="text" name="question" placeholder="Ask Gemini..." required />
+    <button type="submit">Ask</button>
+</form>
+
+<!-- Loading Spinner -->
+<div id="loading" style="display:none;">
+    <div class="spinner"></div>
+    <p>Thinking<span class="dots">...</span> (እያሰብኩ ነው<span class="dots">...</span>)</p>
+</div>
+
+<!-- Gemini's Answer -->
+<div id="response" th:if="${answer}" class="gemini-response">
+    <h2>Gemini's Answer</h2>
+    <div th:if="${answer.contains('503')}" class="error-message">
+        <p>🚧 Gemini is currently overloaded. Please try again in a few minutes.</p>
+    </div>
+    <div th:unless="${answer.contains('503')}" th:utext="${answer}"></div>
+</div>
+
+<!-- JavaScript to toggle spinner -->
+<script>
+    const loading = document.getElementById("loading");
+    const response = document.getElementById("response");
+
+    document.getElementById("askForm").addEventListener("submit", function () {
+        loading.style.display = "block";
+        if (response) {
+            response.innerHTML = "";
+        }
+    });
+
     if (response && response.innerText.trim() !== "") {
         loading.style.display = "none";
     }
