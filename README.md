@@ -3,7 +3,7 @@
 A Spring Boot web app that teaches the Amharic alphabet, common phrases, and Ethiopian cultural facts. 
 Built with Spring MVC/Thymeleaf and powered by Gemini LLM for intelligent explanations. Designed for local use and cultural education.
 
-In addition, the app can be accessed from a web browser such as Chrome or via API (Spring REST) calls from a tool like Postman.
+In addition, the app can be accessed via API (Spring REST) calls from a tool like Postman.
 
 ## H2 Database
 The app also uses Hibernate/JPA and an H2 in-memory database, for local storage and retrieval of phrases, facts and the Amharic alphabet. 
