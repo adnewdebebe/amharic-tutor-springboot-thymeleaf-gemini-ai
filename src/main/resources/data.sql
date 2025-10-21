@@ -8,7 +8,7 @@ INSERT INTO phrase (amharic, english) VALUES ('ይቅርታ (yiqərta)', 'Sorry'
 INSERT INTO phrase (amharic, english) VALUES ('እባክህ (ʔəbakəh)', 'Please');
 INSERT INTO phrase (amharic, english) VALUES ('አዎን (ʔawon)', 'Yes');
 INSERT INTO phrase (amharic, english) VALUES ('አይ (ʔay)', 'No');
-INSERT INTO phrase (amharic, english) VALUES ('መምጣት እፈልጋለሁ (mämmṭat ʔəfäləggalləhu)', 'I want to come');
+INSERT INTO phrase (amharic, english) VALUES ('እግር ኳስን እጫወታለሁ (ʔɨgɨr kʼwasɨn ʔɨtʃʼawɨtalɨhu)', 'I play soccer');
 INSERT INTO phrase (amharic, english) VALUES ('ትምህርት እወዳለሁ (təmhərt ʔəwädalləhu)', 'I love learning');
 INSERT INTO phrase (amharic, english) VALUES ('የኔ ስም አድነው ነው (yäne səm ʔadənäw näw)', 'My name is Adnew');
 INSERT INTO phrase (amharic, english) VALUES ('እባክህ ደግመህ ተናገር (ʔəbakəh däggəmäh tänagär)', 'Please say it again');
