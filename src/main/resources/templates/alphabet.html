@@ -7,7 +7,7 @@
         body { font-family: sans-serif; margin: 2em; }
         table { border-collapse: collapse; width: 100%; }
         th, td { border: 1px solid #ccc; padding: 0.5em; text-align: center; }
-        th { background-color: #f2f2f2; }
+        th { color: white; background-color: #34495e; }
         .fidel { font-size: 1.5em; }
     </style>
 </head>
@@ -31,7 +31,7 @@
             <td th:text="${letter.pronunciation}">hä</td>
         </tr>
         <tr th:if="${iterStat.index % 7 == 6}">
-            <td colspan="3" style="background-color:#eee; height:10px;"></td>
+            <td colspan="3" style="background-color:#34495e; height:10px;"></td>
         </tr>
     </th:block>
     </tbody>

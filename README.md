@@ -134,7 +134,9 @@ To enable Gemini-powered Q&A functionality, you’ll need a valid API key from G
 ##  Screenshots:
    - ![Home page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/master/docs/screenshots/home.png)
    - ![Alphabet page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/master/docs/screenshots/alphabet.png)
-
+   - ![Phrases page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/master/docs/screenshots/phrases.png)
+   - ![Facts page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/master/docs/screenshots/facts.png)
+   - ![Ask page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/master/docs/screenshots/ask.png)
 
 ## Run Locally
 

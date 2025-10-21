@@ -1,20 +1,20 @@
 
--- phrase table
-INSERT INTO phrase (amharic, english) VALUES ('እንደምን አለህ', 'How are you?');
-INSERT INTO phrase (amharic, english) VALUES ('ሰላም', 'Hello');
-INSERT INTO phrase (amharic, english) VALUES ('አመሰግናለሁ', 'Thank you');
-INSERT INTO phrase (amharic, english) VALUES ('በጣም አመሰግናለሁ', 'Thank you very much');
-INSERT INTO phrase (amharic, english) VALUES ('ይቅርታ', 'Sorry');
-INSERT INTO phrase (amharic, english) VALUES ('እባክህ', 'Please');
-INSERT INTO phrase (amharic, english) VALUES ('አዎን', 'Yes');
-INSERT INTO phrase (amharic, english) VALUES ('አይ', 'No');
-INSERT INTO phrase (amharic, english) VALUES ('መምጣት እፈልጋለሁ', 'I want to come');
-INSERT INTO phrase (amharic, english) VALUES ('ትምህርት እወዳለሁ', 'I love learning');
-INSERT INTO phrase (amharic, english) VALUES ('የኔ ስም አድነው ነው', 'My name is Adnew');
-INSERT INTO phrase (amharic, english) VALUES ('እባክህ ደግመህ ተናገር', 'Please say it again');
-INSERT INTO phrase (amharic, english) VALUES ('አልሰማሁም', 'I didn’t hear');
-INSERT INTO phrase (amharic, english) VALUES ('ትክክል ነው', 'It’s correct');
-INSERT INTO phrase (amharic, english) VALUES ('ደህና ነኝ', 'I’m fine');
+-- phrase table with transliterations
+INSERT INTO phrase (amharic, english) VALUES ('እንደምን አለህ (əndämən alläh)', 'How are you?');
+INSERT INTO phrase (amharic, english) VALUES ('ሰላም (sälam)', 'Hello');
+INSERT INTO phrase (amharic, english) VALUES ('አመሰግናለሁ (ʔämäsäggənalləhu)', 'Thank you');
+INSERT INTO phrase (amharic, english) VALUES ('በጣም አመሰግናለሁ (bäṭam ʔämäsäggənalləhu)', 'Thank you very much');
+INSERT INTO phrase (amharic, english) VALUES ('ይቅርታ (yiqərta)', 'Sorry');
+INSERT INTO phrase (amharic, english) VALUES ('እባክህ (ʔəbakəh)', 'Please');
+INSERT INTO phrase (amharic, english) VALUES ('አዎን (ʔawon)', 'Yes');
+INSERT INTO phrase (amharic, english) VALUES ('አይ (ʔay)', 'No');
+INSERT INTO phrase (amharic, english) VALUES ('መምጣት እፈልጋለሁ (mämmṭat ʔəfäləggalləhu)', 'I want to come');
+INSERT INTO phrase (amharic, english) VALUES ('ትምህርት እወዳለሁ (təmhərt ʔəwädalləhu)', 'I love learning');
+INSERT INTO phrase (amharic, english) VALUES ('የኔ ስም አድነው ነው (yäne səm ʔadənäw näw)', 'My name is Adnew');
+INSERT INTO phrase (amharic, english) VALUES ('እባክህ ደግመህ ተናገር (ʔəbakəh däggəmäh tänagär)', 'Please say it again');
+INSERT INTO phrase (amharic, english) VALUES ('አልሰማሁም (ʔalsämähum)', 'I didn’t hear');
+INSERT INTO phrase (amharic, english) VALUES ('ትክክል ነው (təkkəkl näw)', 'It’s correct');
+INSERT INTO phrase (amharic, english) VALUES ('ደህና ነኝ (dähna näň)', 'I’m fine');
 
 -- fact table
 INSERT INTO fact (content) VALUES ('Ethiopia is the oldest independent country in Africa, founded in 980 BC.');
