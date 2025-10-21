@@ -17,7 +17,7 @@ The data for the database tables can be found in the (src/main/resources/data.sq
 
 
 ## HTTP Endpoints 
-## These endpoints serve HTML pages rendered via Thymeleaf:
+## These endpoints serve HTML pages rendered via Thymeleaf and Spring MVC:
 
 1) Home page with intro and navigation (index.html):
    - `http//loclhost:8080/` 
@@ -34,7 +34,7 @@ The data for the database tables can be found in the (src/main/resources/data.sq
 5) Displays Google Gemini-powered LLM Q&A about Ethiopia or the Amharic language (ask.html):
    - `http//loclhost:8080/ask`
 
-## API Endpoints
+## API Endpoints via Spring REST
 ## These endpoints return JSON responses for frontend apps and clients (i.e, Postman)
 
 1) Ask a question (Gemini-powered)
