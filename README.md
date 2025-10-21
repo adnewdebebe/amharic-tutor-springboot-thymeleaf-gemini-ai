@@ -93,7 +93,7 @@ The data for the database tables can be found in the (src/main/resources/data.sq
             }
        ]
 
-5) The Postman collection in this project contains all the API endpoints listed above.
+5) The Postman collection in this project contains all the REST API endpoints listed above.
    - The Postman collection can be found in the (docs/amharic-tutor-springboot-thymeleaf-gemini-ai.postman_collection.json) file. 
    - Import the collection into Postman to test the REST API endpoints.
 
