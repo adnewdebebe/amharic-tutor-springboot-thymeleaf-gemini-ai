@@ -1,19 +1,17 @@
-# Use a Java 21 base image with Maven
-FROM eclipse-temurin:21-jdk
+# Use Maven + Java 21 base image
+FROM maven:3.9.4-eclipse-temurin-21
 
-# Set working directory inside the container
+# Set working directory
 WORKDIR /app
 
 # Copy your entire project into the container
 COPY . .
 
-# Build the JAR using Maven Wrapper
-RUN ./mvnw clean package
+# Build the JAR using Maven
+RUN mvn clean package
 
 # Use Render's dynamic port if provided
 ENV PORT=8080
-
-# Expose the default port
 EXPOSE 8080
 
 # Run the packaged JAR
