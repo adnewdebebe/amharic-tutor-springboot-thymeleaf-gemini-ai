@@ -1,6 +1,7 @@
 # Amharic Tutor 🇪🇹
 
 Developed by Adnew Debebe (Software Developer):
+View the live running app at: https://amharic-tutor-springboot-thymeleaf.onrender.com/
 
 A Spring Boot web app that teaches the Amharic alphabet, common phrases, and Ethiopian cultural facts. 
 Built with Spring MVC/Thymeleaf and powered by Gemini LLM for intelligent explanations. Designed for local use and cultural education.
