@@ -1,23 +1,40 @@
+/* Layout container to stretch page */
 body {
     font-family: Arial, sans-serif;
-    margin: 40px;
+    margin: 0;
+    padding: 40px;
     background-color: #f9f9f9;
     color: #333;
-
     background-image: url('../../images/Ethiopian-Background-Scenery-02.png'); /* adjust path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Page wrapper for layout */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Content area grows to fill space */
+.content-wrap {
+    flex: 1;
+}
+
+/* Header */
 h1 {
     color: #2c3e50;
     margin-bottom: 20px;
 }
 
+/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -39,6 +56,7 @@ td {
     text-align: left;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -58,16 +76,23 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Spinner */
 .spinner {
-  border: 6px solid #f3f3f3;
-  border-top: 6px solid #3498db;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 1s linear infinite;
-  margin: auto;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: auto;
 }
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Form */
 form {
     display: flex;
     justify-content: center;
@@ -98,13 +123,7 @@ button:hover {
     background-color: #2980b9;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-
-
+/* Gemini response */
 .gemini-response {
     background-color: #ffffffcc;
     border: 1px solid #ccc;
@@ -128,6 +147,7 @@ button:hover {
     padding-bottom: 10px;
 }
 
+/* Error message */
 .error-message {
     background-color: #ffe6e6;
     border: 1px solid #e74c3c;
@@ -136,4 +156,25 @@ button:hover {
     border-radius: 6px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    font-size: 16px;
+    border-top: 1px solid #ccc;
+}
+
+footer a {
+    color: #2980b9;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
