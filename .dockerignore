@@ -1,0 +1,25 @@
+# Ignore build artifacts
+target/
+*.jar
+
+# Ignore Git metadata
+.git/
+.gitignore
+
+# Ignore IDE/editor configs
+*.iml
+.idea/
+.vscode/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Ignore documentation and markdown
+README.md
+LICENSE
+*.md
+
+# Ignore environment files
+.env
