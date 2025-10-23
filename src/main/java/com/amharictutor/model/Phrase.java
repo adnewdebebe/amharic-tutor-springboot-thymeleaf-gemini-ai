@@ -21,16 +21,12 @@ public class Phrase {
     @Column(nullable = false)
     private String english;
 
-    @Column
-    private String audioUrl; // Optional: for future audio playback
-
     // Constructors
     public Phrase() {}
 
-    public Phrase(String amharic, String english, String audioUrl) {
+    public Phrase(String amharic, String english) {
         this.amharic = amharic;
         this.english = english;
-        this.audioUrl = audioUrl;
     }
 
     // Getters and Setters
@@ -52,13 +48,5 @@ public class Phrase {
 
     public void setEnglish(String english) {
         this.english = english;
-    }
-
-    public String getAudioUrl() {
-        return audioUrl;
-    }
-
-    public void setAudioUrl(String audioUrl) {
-        this.audioUrl = audioUrl;
     }
 }

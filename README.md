@@ -15,6 +15,11 @@ In addition, the app can be accessed via API (Spring REST) calls from a tool lik
 The app also uses Hibernate/JPA and an H2 in-memory database, for local storage and retrieval of phrases, facts and the Amharic alphabet. 
 The data for the database tables can be found in the (src/main/resources/data.sql) file.
 
+- H2 Database Console: http://localhost:8080/h2-console/
+- JDBC URL: jdbc:h2:mem:testdb
+- User Name: sa
+- Password: <leave blank>
+
 ## Features
 - Ethiopian Amharic Alphabet (ፊደላት)
 - Common Phrases
