@@ -117,12 +117,12 @@ The data for the database tables can be found in the (src/main/resources/data.sq
     - Postman
     - Git
     - GitHub
+    - Docker
     - IntelliJ IDEA or Visual Studio Code IDE
     - HTML
     - CSS
     - JavaScript
     - Google Chrome
-
 
 ## Gemini API Key Setup
 
