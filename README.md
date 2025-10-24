@@ -4,8 +4,7 @@ Developed by Adnew Debebe
 
 View a live version of the running app by selecting the link below: 
 
-- <a href="https://amharic-tutor-springboot-thymeleaf.onrender.com/" target="_blank">Amharic Tutor Web App</a>
-
+- [Amharic Tutor Web App](https://amharic-tutor-springboot-thymeleaf.onrender.com)
 
 
 A Spring Boot web app that teaches the Ethiopian Amharic alphabet, common phrases, and Ethiopian cultural facts. 
