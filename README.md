@@ -20,7 +20,7 @@ The data for the database tables can be found in the (src/main/resources/data.sq
 - H2 Database Console: http://localhost:8080/h2-console/
 - JDBC URL: jdbc:h2:mem:testdb
 - User Name: sa
-- Password: <leave blank>
+- Password: [leave blank]
 
 ## Features
 - Ethiopian Amharic Alphabet (ፊደላት)
