@@ -31,7 +31,7 @@
 </div>
 
 <!-- Gemini's Answer -->
-<div id="response" th:if="${answer}" class="gemini-response">
+<div id="response" th:if="${answer != null and !#strings.isEmpty(answer)}" class="gemini-response">
     <h2>Gemini's Answer</h2>
     <div th:if="${answer.contains('503')}" class="error-message">
         <p>🚧 Gemini is currently overloaded. Please try again in a few minutes.</p>

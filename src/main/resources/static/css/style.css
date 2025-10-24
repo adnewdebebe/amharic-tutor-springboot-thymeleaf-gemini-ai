@@ -139,6 +139,10 @@ button:hover {
     color: #2c3e50;
 }
 
+.gemini-response:empty {
+    display: none;
+}
+
 .gemini-response h2 {
     margin-top: 0;
     color: #34495e;
