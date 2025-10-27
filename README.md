@@ -147,6 +147,9 @@ To enable Gemini-powered Q&A functionality, you’ll need a valid API key from G
     - [System.Environment]::SetEnvironmentVariable("GEMINI_API_KEY", "your-api-key-here", "User") //to set the key for the current user only
     - [System.Environment]::GetEnvironmentVariable("GEMINI_API_KEY", "User") //to confirm that the key has been set
 
+## Docker Setup
+- The app can be executed in a Docker container either locally or on a remote server (via a Web Hosting service like 'https://render.com/').
+- Please see the included Dockerfile for reference.
 
 ##  Screenshots:
    - ![Home page](https://github.com/adnewdebebe/amharic-tutor-springboot-thymeleaf-gemini-ai/blob/master/docs/screenshots/home.png)
